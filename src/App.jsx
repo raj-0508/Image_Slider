@@ -8,13 +8,20 @@ import img6 from "./assets/img6.jpeg";
 
 function App() {
   const slider = useRef();
-  
+  const imageRef = useRef();
+
   const next = () => {
-    slider.current.scrollLeft += 300;
+    if (imageRef.current) {
+      const imageWidth = imageRef.current.clientWidth + 16;
+      slider.current.scrollLeft += imageWidth;
+    }
   };
 
   const prev = () => {
-    slider.current.scrollLeft -= 300;
+    if (imageRef.current) {
+      const imageWidth = imageRef.current.clientWidth + 16;
+      slider.current.scrollLeft -= imageWidth;
+    }
   };
 
   return (
@@ -43,7 +50,12 @@ function App() {
           ref={slider}
           className="flex justify-start gap-4 overflow-x-auto px-4 w-full max-w-screen-lg mx-auto"
         >
-          <img src={img1} alt="img1" className="w-[80vw] flex-shrink-0" />
+          <img
+            ref={imageRef}
+            src={img1}
+            alt="img1"
+            className="w-[80vw] flex-shrink-0"
+          />
           <img src={img2} alt="img2" className="w-[80vw] flex-shrink-0" />
           <img src={img3} alt="img3" className="w-[80vw] flex-shrink-0" />
           <img src={img4} alt="img4" className="w-[80vw] flex-shrink-0" />
