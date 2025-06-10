@@ -12,14 +12,14 @@ function App() {
 
   const next = () => {
     if (imageRef.current) {
-      const imageWidth = imageRef.current.clientWidth + 16;
+      const imageWidth = imageRef.current.clientWidth ;
       slider.current.scrollLeft += imageWidth;
     }
   };
 
   const prev = () => {
     if (imageRef.current) {
-      const imageWidth = imageRef.current.clientWidth + 16;
+      const imageWidth = imageRef.current.clientWidth ;
       slider.current.scrollLeft -= imageWidth;
     }
   };
