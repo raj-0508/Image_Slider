@@ -1,12 +1,87 @@
-# React + Vite
+# 📸 React Image Slider
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a **React-based Image Slider** built using functional components, hooks, and Tailwind CSS for styling. It showcases a series of images with smooth transitions and supports both manual and automatic slide navigation.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## 🚀 Live Preview 👉 [View Live](https://image-slider-alpha-seven.vercel.app/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Features
+
+* 🔁 Auto-play every 2 seconds
+* 🖱️ Pause on hover
+* ⬅️➡️ Manual previous/next controls
+* 🌄 Responsive image display with animation
+* 🎨 Styled with Tailwind CSS
+
+
+
+## 🛠️ Technologies Used
+
+* **React.js** (Functional Components + Hooks)
+* **Tailwind CSS** for modern, responsive styling
+* **useEffect**, **useState**, and **useRef** hooks
+
+
+
+## 📂 Folder Structure
+
+```
+src/
+├── App.js           # Main React component
+├── assets/          # Image files (img1.jpg to img9.jpg)
+└── index.css        # Tailwind base styles
+```
+
+
+## 🧠 What I Learned
+
+> Building this project helped me understand:
+
+* ✅ How to create a simple but powerful image slider in React
+* ✅ The use of `useState` for handling current slide index
+* ✅ How `useEffect` is used to manage side effects like intervals
+* ✅ `useRef` to store interval timer reference
+* ✅ Managing hover state to pause/resume autoplay
+* ✅ Dynamic class toggling for animations (`opacity-100`, `opacity-0`)
+* ✅ Creating responsive layouts with Tailwind CSS
+
+
+
+## 🧑‍💻 How to Run This Project
+
+1. Clone this repo:
+
+```bash
+git clone https://github.com/your-username/react-image-slider.git
+```
+
+2. Navigate to project folder:
+
+```bash
+cd react-image-slider
+```
+
+3. Install dependencies:
+
+```bash
+npm install
+```
+
+4. Start the development server:
+
+```bash
+npm run dev  # or npm start
+```
+
+Make sure images (`img1.jpg` to `img9.jpg`) are placed inside `src/assets/`.
+
+---
+
+# Screenshot
+
+![image](Screenshot.png)
+
+## 🙌 Acknowledgements
+
+* Built using **React** with ❤️
